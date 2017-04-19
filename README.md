@@ -2,13 +2,13 @@
 How to create the tables in dynamodb using python 
 
 Create the directory ./DynamoDBLocal_lib as a root user and go the  created directory 
-1) Downloading the zip file dynamodb_local_latest.tar.gz
+1) Downloading the zip file dynamodb_local_latest.tar.gz                     
 wget http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local_latest.tar.gz
 
-2) Unzip the dynamodb_local_latest.tar.gz
+2) Unzip the dynamodb_local_latest.tar.gz                             
 gunzip dynamodb_local_latest.tar.gz
 
-3) Untar the  dynamodb_local_latest.tar file
+3) Untar the  dynamodb_local_latest.tar file                                         
 tar -xvf gunzip dynamodb_local_latest.tar 
 
 4) Run the Java command 
