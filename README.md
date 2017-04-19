@@ -6,12 +6,15 @@ Create the directory ./DynamoDBLocal_lib as a root user and go the  created dire
 wget http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local_latest.tar.gz
 
 2) Unzip the dynamodb_local_latest.tar.gz
+
 gunzip dynamodb_local_latest.tar.gz
 
 3) Untar the  dynamodb_local_latest.tar file
+
 tar -xvf gunzip dynamodb_local_latest.tar 
 
 4) Run the Java command 
+
 java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -help
 
 5) Goto to AWS IAM  create the group 'dynamo_db access'. Provide Complete_dynamodb_access 
@@ -19,12 +22,14 @@ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -help
 6) Create a user with dynamo_db_access and download access ID and Access Key.
 
 5)  Install Boto3
+
 pip install boto3
 
 6) Install aws configure
  yum install aws configure -y
  
 7) Set the following IDs
+
 aws configure
 AWS Access Key ID [****]:
 AWS Secret Access Key [****]:
@@ -32,6 +37,7 @@ Default region name [us-west-1]: us-west-2
 Default output format [None]:
 
 8) Run the following commands
+
 import boto.dynamodb
 conn = boto.dynamodb.connect_to_region(
         'us-west-2',
