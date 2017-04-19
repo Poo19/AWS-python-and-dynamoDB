@@ -33,12 +33,9 @@ Default output format [None]:  json
 
 8) Run the following commands
 import boto.dynamodb                               
-
 conn = boto.dynamodb.connect_to_region(                  
         'us-west-2',                                     
         aws_access_key_id='<YOUR_AWS_KEY_ID>',                    
-        aws_secret_access_key='<YOUR_AWS_SECRET_KEY>')                       
-        
+        aws_secret_access_key='<YOUR_AWS_SECRET_KEY>')                           
 conn.list_tables()                            
-
 The following command should list all the Tables present in the data base                    
