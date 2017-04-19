@@ -20,3 +20,24 @@ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -help
 
 5)  Install Boto3
 pip install boto3
+
+6) Install aws configure
+ yum install aws configure -y
+ 
+7) Set the following IDs
+aws configure
+AWS Access Key ID [****]:
+AWS Secret Access Key [****]:
+Default region name [us-west-1]: us-west-2
+Default output format [None]:
+
+8) Run the following commands
+import boto.dynamodb
+conn = boto.dynamodb.connect_to_region(
+        'us-west-2',
+        aws_access_key_id='<YOUR_AWS_KEY_ID>',
+        aws_secret_access_key='<YOUR_AWS_SECRET_KEY>')
+        
+conn.list_tables()
+
+The following command should list all the Tables present in the data base
