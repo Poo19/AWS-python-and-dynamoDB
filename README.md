@@ -9,7 +9,7 @@ wget http://dynamodb-local.s3-website-us-west-2.amazonaws.com/dynamodb_local_lat
 gunzip dynamodb_local_latest.tar.gz
 
 3) Untar the  dynamodb_local_latest.tar file                                         
-tar -xvf gunzip dynamodb_local_latest.tar 
+tar -xvf  dynamodb_local_latest.tar 
 
 4) Run the Java command 
 java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -help
