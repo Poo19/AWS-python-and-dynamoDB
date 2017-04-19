@@ -11,7 +11,7 @@ gunzip dynamodb_local_latest.tar.gz
 3) Untar the  dynamodb_local_latest.tar file                                         
 tar -xvf  dynamodb_local_latest.tar 
 
-4) Run the Java command 
+4) Run the Java command                                            
 java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -help
 
 5) Goto to AWS IAM  create the group 'dynamo_db access'. Provide Complete_dynamodb_access 
